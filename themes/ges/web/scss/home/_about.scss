@@ -1,0 +1,165 @@
+.about{
+	padding: 150px 0 80px;
+	overflow: hidden;
+	&__info{
+		width: 43%;
+		padding-top: 100px;
+		padding-right: 30px;
+	}
+	&__header{
+		margin-bottom: 40px;
+	}
+	&-btn{
+		margin-top: 25px;
+		font-size: 30px;
+	}
+	&__img{
+		width: 57%;
+		height: 620px;
+	}
+	&-box-style{
+		position: relative;
+	    width: 1047px;
+	    height: 100%;
+	}
+
+	&-bottom{
+		margin-top: 120px;
+		&-left{
+			width: 43%;
+		}
+		&-right{
+			width: 57%;
+		}
+	}
+}
+.thumb-left{
+	position: relative;
+	width: 380px;
+	height: 340px;
+	img{
+		top: -170px;
+	}
+}
+.thumb-right{
+	position: relative;
+	width: 280px;
+	height: 270px;
+}
+.thumb-text{
+	width: 43%;
+}
+
+@media (max-width: 1560px){
+	.about{
+	    padding: 100px 0 60px;
+		&__img{
+			height: 540px;
+		}
+		&-btn{
+			font-size: 24px;
+		}
+	}
+}
+@media (max-width: 1270px){
+	.about{
+		&__info{
+			padding-top: 50px;
+		}
+		&-btn{
+			font-size: 20px;
+		}
+		&__img{
+			height: 450px;
+		}
+		&-box-style{
+			width: 740px;
+		}
+		&-bottom{
+			margin-top: 90px;
+		}
+	}
+	.thumb-left{
+		width: 260px;
+    	height: 230px;
+    	img{
+    		top: -140px;
+    	}
+	}
+	.thumb-right{
+		width: 160px;
+    	height: 170px;
+	}
+}
+
+@media (max-width: 1000px){
+	.about{
+		padding: 50px 0;
+		&__info{
+			width: 100%;
+			margin-bottom: 30px;
+			padding-top: 30px;
+		}
+		&-btn{
+			font-size: 18px;
+		}
+		&__img{
+			width: 100%;
+			height: 400px;
+		}
+		&-box-style{
+			width: 100%;
+		}
+		&-bottom{
+			margin-top: 30px;
+			&-right{
+				flex-direction: column;
+			}
+		}
+	}
+	.thumb-left{
+		img{
+			top: 0;
+		}
+	}
+	.thumb-text{
+		width: 100%;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 767px){
+	.about{
+		&__info{
+			padding-top: 0px;
+		}
+		&__header{
+			margin-bottom: 10px;
+		}
+		&-btn{
+			margin-top: 20px;
+		}
+		&__img{
+			width: 100%;
+			height: auto;
+			img{
+				position: relative;
+			}
+		}
+		
+		&-bottom{
+			&-left{
+				display: none;
+			}
+			&-right{
+				width: 100%;
+			}
+		}
+	}
+	.thumb-right{
+		display: none;
+	}
+	.thumb-text{
+		margin-top: 0;
+	}
+}

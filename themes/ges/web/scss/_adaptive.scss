@@ -1,0 +1,40 @@
+/* CSS Document */
+@media (max-width: 1560px){
+	.content-site{
+	    font-size: 16px;
+	}
+	.heading{
+		font-size: 40px;
+	}
+}
+@media (max-width: 1270px){
+	.content-site{
+	    width: 960px;
+	}
+	.heading{
+		font-size: 35px;
+	}
+}
+@media (max-width: 1000px){
+	.content-site{
+	    width: 90%;
+	}
+	.pt{
+		padding-top: 50px;
+	}
+	.pb{
+		padding-bottom: 50px;
+	}
+	.heading{
+		font-size: 30px;
+	}
+}
+@media (max-width: 767px){
+	.content-site{
+	    font-size: 14px;
+	}
+	.heading{
+		padding-bottom: 20px;
+		font-size: 24px;
+	}
+}

@@ -1,0 +1,82 @@
+.news-view{
+	&-content{
+		width: calc(70% - 30px);
+		.news-box__date{
+			height: 60px;
+		}
+		&__body{
+			font-size: 18px;
+			color: $color-black !important;
+			img{
+				margin: 20px 0;
+			}
+			blockquote{
+				position: relative;
+				margin: 30px 0;
+				padding: 60px 0 60px 60px;
+				border-left: none;
+				border-top: 1px solid #DCDCDC;
+				border-bottom: 1px solid #DCDCDC;
+				background: url(../images/quote.png) no-repeat left center;
+				line-height: 1.2;
+				color: $color-text;
+			}
+		}
+	}
+	&-panel{
+		width: 30%;
+		.panel-div{
+			height: 60px;
+		}
+		.panel-p{
+			display: inline;
+			padding: 0 !important;
+			border-bottom: 2px solid $color-brown;
+			@include fontF($formular, 30px, 400, $color-brown);
+		}
+		.news-box__item{
+			width: 100%;
+			margin: 0;
+			margin-bottom: 30px;
+			&:first-child{
+				width: 100%;
+				.news-box__info{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px){
+	.news-view{
+		&-content{
+			width: 100%;
+			.news-box__date{
+				height: 30px;
+			}
+			&__body{
+				blockquote{
+					padding: 40px 0 40px 60px;
+				}
+			}
+		}
+		&-panel{
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.news-view{
+		&-content{
+			&__body{
+				blockquote{
+					padding: 30px 0 30px 35px;
+    				background-size: 5%;
+    				font-size: 16px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,266 @@
+.team{
+	padding-top: 150px;
+	background: #fff url(../images/bg-image.jpg) no-repeat center;
+	background-size: cover;
+	&-block{
+		&___header{
+			margin-bottom: 40px;
+			.top-link{
+				width: calc(100% / 4 - 22px);
+			}
+			a{
+				text-align: left;
+				font-size: 30px;
+			}
+		}
+		&___item{
+			position: relative;
+			width: calc(100% / 4 - 30px);
+			margin: 0 15px;
+			order: 1;
+			&:nth-child(3){
+				order: 3;
+			}
+			&:last-child{
+				order: 2;
+			}
+		}
+		&___img{
+			position: relative;
+			height: 375px;
+		}
+		&___text{
+			line-height: 1.2;
+			padding-top: 25px;
+		}
+		&___name{
+			padding-bottom: 5px;
+			font-size: 18px;
+			color: $color-form;
+		}
+		&___function{
+			font-size: 16px;
+		}
+	}
+	&-top{
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+	}
+	&-bottom{
+		margin-top: 70px;
+		&-left{
+			width: calc(50% - 15px);
+			font-size: 35px;
+			line-height: 1.4;
+			text-transform: uppercase;
+			color: $color-lightbrown;
+		}
+		&-right{
+		    width: calc(50% + 15px);
+			margin: 0 -15px;
+			.team-block___item{
+				width: calc(100% / 2 - 30px);
+			}
+		}
+	}
+
+	&-design{
+		padding: 230px 0;
+		background: #fff url(../images/bg-image.jpg) no-repeat center;
+		background-size: cover;
+		&-top{
+			position: relative;
+			// right: -100px;
+			right: 17%;
+			text-align: right;
+			font-size: 90px;
+			line-height: 1.2;
+			text-transform: uppercase;
+			color: $color-lightbrown;
+			z-index: 5;
+			span{
+				position: relative;
+				display: inline-block;
+				color: $color-lightbrown;
+				&:before{
+					content: '';
+				    width: 128%;
+    				height: 149%;
+				    position: absolute;
+				    left: 50%;
+				    top: 50%;
+				    transform: translate(-50%,-50%);
+				    border: 1px solid #DCDCDC;
+				    border-radius: 50%;
+				    z-index: -1;
+				}
+			}
+		}
+		&-bottom{
+			position: relative;
+			// left: -200px;
+			left: 5%;
+			font-size: 90px;
+			line-height: 1.2;
+			text-transform: uppercase;
+			color: $color-black;
+		}
+	}
+}
+
+@media (max-width: 1560px){
+	.team{
+		padding-top: 100px;
+		&-block___header{
+			a{
+				font-size: 24px;
+			}
+		}
+		&-design{
+			padding: 150px 0;
+			&-top{
+				right: 10%;
+			}
+			&-top, &-bottom{
+				font-size: 70px;
+			}
+		}
+	}
+}
+@media (max-width: 1270px){
+	.team{
+		&-block{
+			&___header{
+				a{
+					font-size: 20px;
+				}
+			}
+			&___img{
+				height: 295px;
+			}
+		}
+		&-bottom{
+			margin-top: 50px;
+			&-left{
+				font-size: 24px;
+			}
+		}
+		&-design{
+			padding: 100px 0;
+			&-top, &-bottom{
+				font-size: 50px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px){
+	.team{
+		padding-top: 50px;
+		&-block{
+			&___header{
+				a{
+					font-size: 18px;
+				}
+			}
+			&___img{
+				// height: 225px;
+				height: auto;
+				img{
+					position: relative;
+				}
+			}
+		}
+		&-bottom{
+			margin-top: 30px;
+			&-left{
+				font-size: 21px;
+			}
+		}
+		&-design{
+			padding: 50px 0;
+			&-top, &-bottom{
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.team{
+		&-block{
+			&___header{
+				flex-ddirection: column;
+				align-items: start;
+				margin-bottom: 30px;
+				.top-link{
+					width: 100%;
+				}
+			}
+			&___item{
+			    width: calc(100% / 2 - 30px);
+			    margin-bottom: 30px;
+			    &:nth-child(3){
+			    	order: 1;
+			    }
+			    &:last-child{
+			    	margin-bottom: 0;
+			    }
+			}
+			&___text{
+				padding-top: 15px;
+			}
+		}
+		&-bottom{
+			flex-direction: column;
+			margin-top: 0;
+			&-left{
+				width: 100%;
+			}
+			&-right{
+			    width: calc(100% + 30px);
+				margin-top: 30px;
+			}
+		}
+		&-design{
+			&-top, &-bottom{
+				width: 90%;
+				margin: 0 auto;
+				font-size: 25px;
+			}
+			&-top{
+				right: 0;
+				text-align: left;
+			}
+			&-bottom{
+				left: 0;
+			}
+		}
+	}
+}
+@media (max-width: 400px){
+	.team{
+		&-top{
+			width: 100%;
+			margin: 0;
+		}
+		&-block{
+			&___item{
+				width: 100%;
+				margin: 0;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.team-bottom-right{
+		flex-direction: column;
+		width: 100%;
+		margin: 0;
+		margin-top: 30px;
+		.team-block___item{
+			width: 100%;
+			margin: 0;
+			margin-bottom: 30px;
+		}
+	}
+}

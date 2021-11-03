@@ -1,0 +1,209 @@
+.companyBox{
+	&__title{
+		margin-bottom: 20px;
+	    font-size: 30px;
+	    line-height: 1.2;
+	    color: $color-black;
+	}
+	&-one{
+		&__text{
+			// width: 50%;
+			padding-right: 70px;
+		}
+		&__img{
+			// width: 50%;
+		}
+		&-left{
+			position: relative;
+			width: 40%;
+			height: 600px;
+			overflow: hidden;
+		}
+		&-right{
+			position: relative;
+			width: 55%;
+			height: 600px;
+			overflow: hidden;
+		}
+	}
+
+	&-two{
+		padding: 150px 0;
+		&__img{
+			position: relative;
+			height: 500px;
+			overflow: hidden;
+		}
+		&__text{
+			padding-left: 100px;
+		}
+	}
+
+	&-three{
+		padding: 150px 0;
+		background: #fff url(../images/bg-image.jpg) no-repeat center;
+		background-size: cover;
+		&__img{
+			position: relative;
+			width: 40%;
+			height: 325px;
+			overflow: hidden;
+		}
+		&__desc{
+			width: 45%;
+		}
+	}
+
+	&-four{
+		padding-top: 150px;
+		&__img{
+			position: relative;
+			height: 500px;
+			overflow: hidden;
+		}
+		&__text{
+			padding-left: 100px;
+		}
+	}
+}
+.companyBox-item{
+	width: 50%;
+}
+.text-upper{
+	font-size: 35px;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: $color-lightbrown;
+}
+.btn-company{
+	margin-top: 25px;
+	font-size: 30px;
+}
+
+@media (max-width: 1560px){
+	.companyBox{
+		&-one{
+			&-right, &-left{
+				height: 550px;
+			}
+		}
+		&-two, &-three{
+			padding: 100px 0;
+		}
+		&-four{
+			padding-top: 100px;
+		}
+	}
+	.btn-company{
+		font-size: 24px;
+	}
+}
+@media (max-width: 1270px){
+	.companyBox{
+		&-one{
+			&__text{
+				padding-right: 30px;
+			}
+			&-right, &-left{
+				height: 500px;
+			}
+		}
+		&-two, &-four{
+			&__img{
+				height: 450px;
+			}
+			&__text{
+				padding-left: 30px;
+			}
+		}
+		&-three{
+			&__img{
+				height: 280px;
+			}
+		}
+	}
+	.text-upper{
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 1000px){
+	.companyBox{
+		&__title{
+			font-size: 18px;
+		}
+		&-one{
+			&__text{
+				width: 100%;
+			}
+			&__img{
+				width: 100%;
+				margin-top: 30px;
+			}
+			&-right, &-left{
+				height: 400px;
+			}
+		}
+		&-two{
+			padding: 50px 0;
+		}
+		&-two, &-four{
+			&__img{
+				height: 400px;
+			}
+		}
+		&-three{
+			padding: 50px 0;
+			&__img{
+				height: 280px;
+			}
+		}
+		&-four{
+			padding-top: 50px;
+		}
+	}
+	.btn-company{
+		font-size: 21px;
+	}
+}
+
+@media (max-width: 767px){
+	.companyBox{
+		&-item{
+			width: 100%;
+		}
+		&-one{
+			&-right, &-left{
+				height: 280px;
+			}
+		}
+		&-two, &-four{
+			&__img{
+				order: 2;
+				margin-top: 30px;
+				// height: 280px;
+				height: auto;
+				img{
+					position: relative;
+				}
+			}
+			&__text{
+				padding-left: 0;
+			}
+		}
+		&-three{
+			&__img{
+				display: none;
+			}
+			&__desc{
+				width: 100%;
+			}
+		}
+	}
+	.text-upper{
+		font-size: 21px;
+		br{
+			display: none;
+		}
+	}
+}

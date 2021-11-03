@@ -1,0 +1,163 @@
+.news{
+	padding-top: 220px;
+	&-header{
+		.top-link{
+			width: calc(100% / 3 - 22px);
+		}
+		a{
+			text-align: left;
+			font-size: 30px;
+		}
+	}
+	&-box{
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+		padding-top: 40px;
+		&__item{
+			position: relative;
+			width: calc(100% / 3 - 30px);
+			margin: 0 15px;
+			margin-bottom: 30px;
+			background-color: $color-white;
+			overflow: hidden;
+			-webkit-transition: all 0.3s linear;
+			-o-transition: all 0.3s linear;
+			transition: all 0.3s linear;
+		    &:first-child{
+				width: 63.5%;
+				.news-box__info{
+					width: 50%;
+				}
+			}
+			&:hover{
+				.news-box__img{
+					img{
+						-webkit-transform: scale(1.1);
+						    -ms-transform: scale(1.1);
+						        transform: scale(1.1);
+					}
+					&:after{
+					    opacity: 1;
+			    	}
+				}
+				.news-box__info{
+					a{
+						color: $color-brown;
+					}
+				}
+			}
+		}
+		&__img{
+		    position: relative;
+			height: 330px;
+		    overflow: hidden;
+		    img{
+				-webkit-transition: all 1s ease-out;
+				-o-transition: all 1s ease-out;
+				transition: all 1s ease-out;
+		    }
+	    }
+	    &__body{
+	    	padding: 10px 0;
+	    }
+	    &__date{
+			margin-bottom: 5px;
+			@include fontF($formular, 16px, 400, $color-lightbrown);
+		}
+		&__info{
+			a{
+				color: $color-black;
+			}
+		}
+	}
+}
+// Внутренняя 
+.page-news{
+	.news-box{
+		padding-top: 0;
+	}
+}
+.news-btn-all{
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	.btn{
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 1560px){
+	.news{
+		padding-top: 100px;
+		&-header{
+			a{
+				font-size: 24px;
+			}
+		}
+	}
+}
+@media (max-width: 1270px){
+	.news-box__img{
+		height: 270px;
+	}
+}
+
+@media (max-width: 1000px){
+	.news{
+		padding-top: 50px;
+		&-header{
+			.top-link {
+			    width: calc(100% / 2 - 22px);
+			}
+			a{
+				font-size: 18px;
+			}
+		}
+		&-box{
+			&__item{
+				width: calc(100% / 2 - 30px);
+			    &:first-child{
+					width: calc(100% / 2 - 30px);
+					.news-box__info{
+						width: 100%;
+					}
+				}
+			}
+			&__img{
+				height: 280px;
+		    }
+		}
+	}
+}
+@media (max-width: 767px){
+	.news{
+		&-header{
+			flex-direction: column;
+			align-items: start;
+			.top-link{
+				width: 100%;
+			}
+		}
+		&-box{
+			padding-top: 30px;
+			&__img{
+				height: 230px;
+			}
+		}
+	}
+}
+@media (max-width: 500px){
+	.news{
+		&-box{
+			width: 100%;
+			margin: 0;
+			&__item{
+				width: 100%;
+				margin: 0 0 30px;
+				&:first-child{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
